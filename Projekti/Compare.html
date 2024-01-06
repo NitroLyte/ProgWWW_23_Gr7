@@ -5,42 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch Comparison</title>
     <link rel="stylesheet" href="Compare.css">
+    <script src="Compare.js"></script>
 </head>
 <body>
+        <div class="navbar">
+            <ul class="navlist">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Limited Edition</a></li>
+                <li><a href="#">Compare</a></li>
+                <li><a href="#">Watch Studio</a></li>
+            </ul>
+        </div>
 
-    <header>
-        <h1>Watch Comparison</h1>
-    </header>
+    
 
-   
-            <div class="watch" id="watch1">
-                <!-- Watch 1 details go here -->
-                <img src="watch1.jpg" alt="Watch 1">
-                <h2>Watch Model 1</h2>
-                <p>Description of Watch 1.</p>
-                <ul>
-                    <li>Price</li>
-                    <li>Glass used</li>
-                    <!-- Add more features as needed -->
-                </ul>
+            <div class="watch1">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Select your watch</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    </div>
+                  </div>
+            <img src="Pictures/123.jpg" alt="HEHE" width="100"height="100" ; style="margin:15px">
+                <p>Price</p>
+                <p>Price</p>
             </div>
 
-            <div class="watch" id="watch2">
-                <!-- Watch 2 details go here -->
-                <img src="watch2.jpg" alt="Watch 2">
-                <h2>Watch Model 2</h2>
-                <p>Description of Watch 2.</p>
-                <ul>
-                    <li>Price</li>
-                    <li>Glass used</li>
-                    <!-- Add more features as needed -->
-                </ul>
 
+           <div class="watch2">
+            <div class="dropdown">
+                <button onclick="myFunction1()" class="dropbtn">Select your watch</button>
+                <div id="myDropdownn" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="myInputt" onkeyup="filterFunction1()">
+                </div>
+              </div>
+                <img src="Pictures/123.jpg" alt="HEHE" width="100"height="100" ; style="margin:15px">
+                    <p>Price</p>
+                    <p>Price</p>
+            </div>
         
-
-    <footer>
-        <p>&copy; 2024 Watch Comparison</p>
-    </footer>
+     
 
 </body>
 </html>
