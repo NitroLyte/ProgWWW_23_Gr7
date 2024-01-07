@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="Brands.css">
+    <title>Brands</title>
+</head>
+<body>
+  
+    <div class="banner">
+        <h2>All our brands!</h2>
+        <p>Discover our amazing products below.</p>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Pictures/Rolex-PNG-Pic.png" alt="Rolex">
+            <a href="#rolex">Rolex</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="Pictures/omega.png" alt="Omega">
+            <a href="#omega">Omega</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="Pictures/piguet.png" alt="Piguet">
+            <a href="#audemars">Audemars Piguet</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="Pictures/diesel.jpg" alt="Diesel">
+            <a href="#diesel">Diesel</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="Pictures/citizen.PNG" alt="Citizen">
+            <a href="#citizen">Citizen</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="Pictures/kennethCole.png" alt="">
+            <a href="#kenneth">Kenneth Cole</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="Pictures/ulysseNardin].png" alt="">
+            <a href="#ulysse">Ulysse Nardin</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="Pictures/geneva.png" alt="">
+            <a href="#geneva">Geneva</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="Pictures/goldlis.png" alt="">
+            <a href="#goldlis">Goldlis</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="Pictures/montblanc.png" alt="">
+            <a href="#montblanc">Montblanc</a>
+          </div>
+          
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      
+
+    <div class="brand-section" id="rolex-section">
+      <h2>Rolex</h2>
+      <div class="product-container">
+        <div class="product-box" onclick="toggleDetails('product1-details')">
+          <img class="product-image" src="Pictures/rolex/p1.PNG" alt="Product Image 1">
+          <div class="product-title">Datejust</div>
+          <div class="product-price">$3.500</div>
+          <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+          <div class="product-details" id="product1-details">
+            <h3>Datejust Details</h3>
+            <p>Oyster, 36mm,
+            Oystersteel and white gold</p>
+          </div>
+        </div>
+    
+        <div class="product-box" onclick="toggleDetails('product2-details')">
+          <img class="product-image" src="Pictures/rolex/p2.PNG" alt="Product Image 2">
+          <div class="product-title">Submariner</div>
+          <div class="product-price">$9.400</div>
+          <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+          <div class="product-details" id="product2-details">
+            <h3>Submariner Details</h3>
+            <p>Oyster, 41mm,
+                Oystersteel</p>
+          </div>
+        </div>
+
+        <div class="product-box" onclick="toggleDetails('product3-details')">
+            <img class="product-image" src="Pictures/rolex/p3.PNG" alt="Product Image 3">
+            <div class="product-title">GMT-Master II</div>
+            <div class="product-price">$11.550</div>
+             <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+            <div class="product-details" id="product3-details">
+              <h3>GMT-Master II Details</h3>
+              <p>Oyster, 40mm,
+                Oystersteel and Yellow Gold</p>
+            </div>
+          </div>
+
+          <div class="product-box" onclick="toggleDetails('product4-details')">
+            <img class="product-image" src="Pictures/rolex/p4.PNG" alt="Product Image 4">
+            <div class="product-title">Day-Date 40</div>
+            <div class="product-price">$64.000</div>
+             <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+            <div class="product-details" id="product4-details">
+              <h3>Day-Date 40 Details</h3>
+              <p>Oyster, 40mm, platinum</p>
+            </div>
+          </div>
+
+          <div class="product-box" onclick="toggleDetails('product5-details')">
+            <img class="product-image" src="Pictures/rolex/p5.PNG" alt="Product Image 5">
+            <div class="product-title">Cosmograph Daytona</div>
+            <div class="product-price">$78.600</div>
+             <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+            <div class="product-details" id="product5-details">
+              <h3>Cosmograph Daytona Details</h3>
+              <p>Oyster, 40mm, platinum</p>
+            </div>
+          </div>
+
+          <div class="product-box" onclick="toggleDetails('product6-details')">
+            <img class="product-image" src="Pictures/rolex/p6.PNG" alt="Product Image 6">
+            <div class="product-title">Oyster Perpetual</div>
+            <div class="product-price">$6.550</div>
+             <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+            <div class="product-details" id="product6-details">
+              <h3>Oyster Perpetual Details</h3>
+              <p> Oyster, 41mm, Oystersteel</p>
+            </div>
+          </div>
+
+          <div class="product-box" onclick="toggleDetails('product7-details')">
+            <img class="product-image" src="Pictures/rolex/p7.PNG" alt="Product Image 7">
+            <div class="product-title">Yacht-Master</div>
+            <div class="product-price">$14.500</div>
+             <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+            <div class="product-details" id="product7-details">
+              <h3>Yacht-Master Details</h3>
+              <p>Oyster, 42mm,
+                RLX titanium</p>
+            </div>
+          </div>
+
+          <div class="product-box" onclick="toggleDetails('product8-details')">
+            <img class="product-image" src="Pictures/rolex/p8.PNG" alt="Product Image 8">
+            <div class="product-title">Sea-Dweller</div>
+            <div class="product-price">$13.650</div>
+             <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+            <div class="product-details" id="product8-details">
+              <h3>Sea-Dweller Details</h3>
+              <p>Oyster, 43mm,
+                Oystersteel and Yellow Gold</p>
+            </div>
+          </div>
+
+          <div class="product-box" onclick="toggleDetails('product9-details')">
+            <img class="product-image" src="Pictures/rolex/p9.PNG" alt="Product Image 9">
+            <div class="product-title">Deepsea</div>
+            <div class="product-price">$14.600</div>
+             <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+            <div class="product-details" id="product9-details">
+              <h3>Deepsea II Details</h3>
+              <p> Oyster, 44mm,
+                Oystersteel</p>
+            </div>
+          </div>
+
+          <div class="product-box" onclick="toggleDetails('product10-details')">
+            <img class="product-image" src="Pictures/rolex/p10.PNG" alt="Product Image 10">
+            <div class="product-title">Air-King</div>
+            <div class="product-price">$7.650</div>
+             <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+            <div class="product-details" id="product10-details">
+              <h3>Air-King Details</h3>
+              <p>Oyster, 40mm,
+                Oystersteel</p>
+            </div>
+          </div>
+
+          <div class="product-box" onclick="toggleDetails('product11-details')">
+            <img class="product-image" src="Pictures/rolex/p11.PNG" alt="Product Image 11">
+            <div class="product-title">Explorer</div>
+            <div class="product-price">$12.200</div>
+             <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+            <div class="product-details" id="product11-details">
+              <h3>Explorer Details</h3>
+              <p>Oyster, 36mm,
+                Oystersteel and Yellow Gold</p>
+            </div>
+          </div>
+
+          <div class="product-box" onclick="toggleDetails('product12-details')">
+            <img class="product-image" src="Pictures/rolex/p12.PNG" alt="Product Image 12">
+            <div class="product-title">Lady-Datejust</div>
+            <div class="product-price">$10.500</div>
+             <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+            <div class="product-details" id="product12-details">
+              <h3>Lady-Datejust Details</h3>
+              <p>Oyster, 28mm,
+                Everose Gold and diamonds</p>
+            </div>
+          </div>
+
+          <div class="product-box" onclick="toggleDetails('product13-details')">
+            <img class="product-image" src="Pictures/rolex/p13.PNG" alt="Product Image 13">
+            <div class="product-title">Sky-Dweller</div>
+            <div class="product-price">$43.950</div>
+             <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+            <div class="product-details" id="product13-details">
+              <h3>Sky-Dweller Details</h3>
+              <p>Oyster, 42mm,
+                white Gold</p>
+            </div>
+          </div>
+
+          <div class="product-box" onclick="toggleDetails('product14-details')">
+            <img class="product-image" src="Pictures/rolex/p14.PNG" alt="Product Image 14">
+            <div class="product-title">1908</div>
+            <div class="product-price">$22.650</div>
+             <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+            <div class="product-details" id="product14-details">
+              <h3>1908 Details</h3>
+              <p>39mm, 18kt gold,
+                polished finish</p>
+            </div>
+          </div>
+        </div>
+        <div class="brand-section" id="omega-section">
+
+
+          <h2>Omega</h2>
+          <div class="product-container">
+          <div class="product-box" onclick="toggleDetails('product15-details')">
+            <img class="product-image" src="Pictures/Omega/o1.png" alt="Product Image 15">
+            <div class="product-title">Globmaster</div>
+            <div class="product-price">$7.500</div>
+             <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+            <div class="product-details" id="product15-details">
+              <h3>Globmaster Details</h3>
+              <p>39 mm, Steel On Leather Strap</p>
+            </div>
+          </div>
+
+          <div class="product-box" onclick="toggleDetails('product16-details')">
+            <img class="product-image" src="Pictures/Omega/o2.png" alt="Product Image 16">
+            <div class="product-title">Constellation</div>
+            <div class="product-price">$5.850</div>
+             <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+            <div class="product-details" id="product16-details">
+              <h3>Constellation Details</h3>
+              <p>41 mm, steel on leather strap</p>
+            </div>
+            </div>
+
+            <div class="product-box" onclick="toggleDetails('product17-details')">
+              <img class="product-image" src="Pictures/Omega/o3.jpg" alt="Product Image 17">
+              <div class="product-title">AquaTerra</div>
+              <div class="product-price">$5.100</div>
+               <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+              <div class="product-details" id="product17-details">
+                <h3>AquaTerra Details</h3>
+                <p>41 MM, STEEL ON STEEL</p>
+              </div>
+            </div>
+
+              <div class="product-box" onclick="toggleDetails('product18-details')">
+                <img class="product-image" src="Pictures/Omega/o4.jpg" alt="Product Image 18">
+                <div class="product-title">Diver 300M</div>
+                <div class="product-price">$4.282</div>
+                 <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                <div class="product-details" id="product18-details">
+                  <h3>Diver Details</h3>
+                  <p>42 MM, STEEL ON STEEL</p>
+                </div>
+              </div>
+
+                <div class="product-box" onclick="toggleDetails('product19-details')">
+                  <img class="product-image" src="Pictures/Omega/o5.jpg" alt="Product Image 19">
+                  <div class="product-title">PlanetOcean</div>
+                  <div class="product-price">$10.875</div>
+                   <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                  <div class="product-details" id="product19-details">
+                    <h3>PlanetOcean Details</h3>
+                    <p>45.5 MM, O‑MEGASTEEL ON O‑MEGASTEEL</p>
+                  </div>
+                </div>
+
+                  <div class="product-box" onclick="toggleDetails('product20-details')">
+                    <img class="product-image" src="Pictures/Omega/o6.jpg" alt="Product Image 20">
+                    <div class="product-title">Moonwatch</div>
+                    <div class="product-price">$11.999</div>
+                     <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                    <div class="product-details" id="product20-details">
+                      <h3>Moonwatch Details</h3>
+                      <p>42 MM, STEEL ON STEEL</p>
+                    </div>
+                  </div>
+
+                    <div class="product-box" onclick="toggleDetails('product21-details')">
+                      <img class="product-image" src="Pictures/Omega/o7.jpg" alt="Product Image 21">
+                      <div class="product-title">DarkSide of the moon</div>
+                      <div class="product-price">$9.550</div>
+                       <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                      <div class="product-details" id="product21-details">
+                        <h3>DarkSide of the moon Details</h3>
+                        <p>44.25 MM, BLACK CERAMIC ON LEATHER STRAP</p>
+                      </div>
+                    </div>
+
+                      <div class="product-box" onclick="toggleDetails('product22-details')">
+                        <img class="product-image" src="Pictures/Omega/o8.jpg" alt="Product Image 22">
+                        <div class="product-title">SpeedMaster</div>
+                        <div class="product-price">$4.840</div>
+                         <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                        <div class="product-details" id="product22-details">
+                          <h3>SpeedMaster Details</h3>
+                          <p>38 MM, YELLOW GOLD ON LEATHER STRAP</p>
+                        </div>
+                      </div>
+
+                      <div class="product-box" onclick="toggleDetails('product23-details')">
+                        <img class="product-image" src="Pictures/Omega/o9.jpg" alt="Product Image 23">
+                        <div class="product-title">TwoCounter</div>
+                        <div class="product-price">$9.500</div>
+                         <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                        <div class="product-details" id="product23-details">
+                          <h3>TwoCounter Details</h3>
+                          <p>O43 MM, STEEL ON STEEL</p>
+                        </div>
+                      </div>
+
+                      <div class="product-box" onclick="toggleDetails('product24-details')">
+                        <img class="product-image" src="Pictures/Omega/o11.png" alt="Product Image 24">
+                        <div class="product-title">LadyMatic</div>
+                        <div class="product-price">$30.700</div>
+                         <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                        <div class="product-details" id="product24-details">
+                          <h3>LadyMatic Details</h3>
+                          <p>34 MM, STEEL ON LEATHER STRAP</p>
+                        </div>
+                      </div>
+
+                      <div class="product-box" onclick="toggleDetails('product25-details')">
+                        <img class="product-image" src="Pictures/Omega/o12.jpg" alt="Product Image 25">
+                        <div class="product-title">Tresor</div>
+                        <div class="product-price">$4.999</div>
+                         <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                        <div class="product-details" id="product25-details">
+                          <h3>Tresor Details</h3>
+                          <p>36 MM, STEEL ON LEATHER STRAP</p>
+                        </div>
+                      </div>
+
+                      <div class="product-box" onclick="toggleDetails('product26-details')">
+                        <img class="product-image" src="Pictures/Omega/o14.jpg" alt="Product Image 26">
+                        <div class="product-title">Tourbillon</div>
+                        <div class="product-price">$76.911</div>
+                         <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                        <div class="product-details" id="product26-details">
+                          <h3>Tourbillon Details</h3>
+                          <p>38.7 MM, PLATINUM ON LEATHER STRAP</p>
+                        </div>
+                      </div>
+                     </div>
+                   </div>                            
+     
+        <div class="brand-section" id="audemars-section">
+          <h2>Audemars Piguet</h2>
+          <div class="product-container">
+            <div class="product-box" onclick="toggleDetails('product27-details')">
+              <img class="product-image" src="Pictures/piguet/a1.jpg" alt="Product Image 27">
+              <div class="product-title">Code 11.59</div>
+              <div class="product-price">$1,707,101.75</div>
+               <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+              <div class="product-details" id="product27-details">
+                <h3>Code 11.59 Details</h3>
+                <p>42 mm, 18-carat white gold case, glareproofed sapphire crystal and caseback.</p>
+              </div>
+            </div>
+        
+            <div class="product-box" onclick="toggleDetails('product28-details')">
+              <img class="product-image" src="Pictures/piguet/a2.jpg" alt="Product Image 28">
+              <div class="product-title">Royal Oak</div>
+              <div class="product-price">$295,522</div>
+               <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+              <div class="product-details" id="product28-details">
+                <h3>Royal Oak Details</h3>
+                <p>41mm, Hammered 18-carat white gold case, 
+                  glareproofed sapphire crystal and caseback, 
+                  screw-locked crown.</p>
+              </div>
+            </div>
+    
+            <div class="product-box" onclick="toggleDetails('product29-details')">
+                <img class="product-image" src="Pictures/piguet/a3.jpg" alt="Product Image 29">
+                <div class="product-title">Royal Oak Offshore</div>
+                <div class="product-price">$1,430,000</div>
+                 <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                <div class="product-details" id="product29-details">
+                  <h3>Royal Oak Offshore Details</h3>
+                  <p>44mm, White ceramic case, 
+                    glareproofed sapphire crystal and caseback, 
+                    white ceramic and titanium pushpieces and crown, 
+                    white ceramic pushpiece guards.</p>
+                </div>
+              </div>
+    
+              <div class="product-box" onclick="toggleDetails('product30-details')">
+                <img class="product-image" src="Pictures/piguet/a4.png" alt="Product Image 30">
+                <div class="product-title">Flying Tourbillon</div>
+                <div class="product-price">$240.000</div>
+                 <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                <div class="product-details" id="product30-details">
+                <h3>Flying Tourbillon Details</h3>
+                  <p>38.8mm, 18-carat white gold case, 
+                     set with brilliant-cut diamonds,
+                     glareproofed sapphire crystal and caseback, 
+                     crown set with a translucent sapphire cabochon.</p>
+                </div>
+              </div>
+            </div>
+          </div>         
+          
+          <div class="brand-section" id="diesel-section">
+            <h2>Diesel</h2>
+            <div class="product-container">
+              <div class="product-box" onclick="toggleDetails('product31-details')">
+                <img class="product-image" src="Pictures/diesel/d1.jpeg" alt="Product Image 31">
+                <div class="product-title">Mega Chief</div>
+                <div class="product-price">$270.00</div>
+                 <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                <div class="product-details" id="product31-details">
+                  <h3>Mega Chief Details</h3>
+                  <p>59 mm x 51 mm, Black Ion-plated Stainless Steel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="brand-section" id="citizen-section">
+            <h2>Citizen</h2>
+            <div class="product-container">
+              <div class="product-box" onclick="toggleDetails('product60-details')">
+                <img class="product-image" src="Pictures/citizen/c1.jpg" alt="Product Image 60">
+                <div class="product-title">Tsuki-Yomi</div>
+                <div class="product-price">$850,00</div>
+                 <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                <div class="product-details" id="product60-details">
+                  <h3>Tsuki-Yomi Details</h3>
+                  <p>ATOMIC TIMEKEEPING / SUPER TITANIUM</p>
+                </div>
+              </div>
+          
+              <div class="product-box" onclick="toggleDetails('product61-details')">
+                <img class="product-image" src="Pictures/citizen/c2.png" alt="Product Image 61">
+                <div class="product-title">Tsuno Chrono</div>
+                <div class="product-price">$1,195.00</div>
+                 <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                <div class="product-details" id="product61-details">
+                  <h3>Tsuno Chrono Details</h3>
+                  <p>50TH ANNIVERSARY EDITION</p>
+                </div>
+              </div>
+      
+              <div class="product-box" onclick="toggleDetails('product62-details')">
+                  <img class="product-image" src="Pictures/citizen/c3.jpg" alt="Product Image 62">
+                  <div class="product-title">Series8 GMT</div>
+                  <div class="product-price">$1,795.00</div>
+                   <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                  <div class="product-details" id="product62-details">
+                    <h3>Series8 GMT Details</h3>
+                    <p>Water resistant up to 100 meters. Caliber 9054.</p>
+                  </div>
+                </div>
+      
+                <div class="product-box" onclick="toggleDetails('product63-details')">
+                  <img class="product-image" src="Pictures/citizen/c4.jpg" alt="Product Image 63">
+                  <div class="product-title">Attesa</div>
+                  <div class="product-price">$2,395.00</div>
+                   <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                  <div class="product-details" id="product63-details">
+                    <h3>Attesa Details</h3>
+                    <p>Water resistant up to 100 meters. Caliber F950.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="brand-section" id="kenneth-section">
+            <h2>Kenneth Cole</h2>
+            <div class="product-container">
+              <div class="product-box" onclick="toggleDetails('product32-details')">
+                <img class="product-image" src="Pictures/kenneth/k1.jpg" alt="Product Image 32">
+                <div class="product-title">Skeleton</div>
+                <div class="product-price">$200</div>
+                 <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                <div class="product-details" id="product32-details">
+                  <h3>Skeleton Details</h3>
+                  <p>Leather Strap Watch</p>
+                </div>
+              </div>
+
+              <div class="product-box" onclick="toggleDetails('product33-details')">
+                <img class="product-image" src="Pictures/kenneth/k2.jpg" alt="Product Image 33">
+                <div class="product-title">KC4638</div>
+                <div class="product-price">$250</div>
+                 <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                <div class="product-details" id="product33-details">
+                  <h3>KC4638 Details</h3>
+                  <p>Silver Skeleton Dial Automatic Two Tone Steel Watch</p>
+                </div>
+              </div>
+
+              <div class="product-box" onclick="toggleDetails('product34-details')">
+                <img class="product-image" src="Pictures/kenneth/k3.jpg" alt="Product Image 34">
+                <div class="product-title">New York</div>
+                <div class="product-price">$195.00</div>
+                 <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                <div class="product-details" id="product34-details">
+                  <h3>New York Details</h3>
+                  <p>Gold-Tone Bracelet Watch</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="brand-section" id="ulysse-section">
+            <h2>Ulysse Nardin</h2>
+            <div class="product-container">
+              <div class="product-box" onclick="toggleDetails('product35-details')">
+                <img class="product-image" src="Pictures/nardin/u1.png" alt="Product Image 35">
+                <div class="product-title">FreakX 2305</div>
+                <div class="product-price">$40,300</div>
+                 <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                <div class="product-details" id="product35-details">
+                  <h3>FreakX 2305 Details</h3>
+                  <p>43mm, titanium with Blue PVD and 5N rose gold finish case houses</p>
+                </div>
+              </div>
+          
+              <div class="product-box" onclick="toggleDetails('product36-details')">
+                <img class="product-image" src="Pictures/nardin/u2.png" alt="Product Image 36">
+                <div class="product-title">Blast Tourbillon</div>
+                <div class="product-price">$67,300</div>
+                 <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                <div class="product-details" id="product36-details">
+                  <h3>Blast Tourbillon Details</h3>
+                  <p>45MM</p>
+                </div>
+              </div>
+      
+              <div class="product-box" onclick="toggleDetails('product37-details')">
+                  <img class="product-image" src="Pictures/nardin/u3.png" alt="Product Image 37">
+                  <div class="product-title">Diver X</div>
+                  <div class="product-price">$26,500</div>
+                   <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                  <div class="product-details" id="product37-details">
+                    <h3>Diver X Details</h3>
+                    <p>44mm, Limited Edition of 175 pieces</p>
+                  </div>
+                </div>
+      
+                <div class="product-box" onclick="toggleDetails('product38-details')">
+                  <img class="product-image" src="Pictures/nardin/u4.png" alt="Product Image 38">
+                  <div class="product-title">Marine Torpilleur</div>
+                  <div class="product-price">$12.100</div>
+                   <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                  <div class="product-details" id="product38-details">
+                    <h3>Marine Torpilleur Details</h3>
+                    <p>DUAL TIME, 44MM</p>
+                  </div>
+                </div>
+
+                <div class="product-box" onclick="toggleDetails('product40-details')">
+                  <img class="product-image" src="Pictures/nardin/u5.png" alt="Product Image 40">
+                  <div class="product-title">Classico Manara Manufacture</div>
+                  <div class="product-price">$35,000</div>
+                   <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                  <div class="product-details" id="product40-details">
+                    <h3>Classico Manara Manufacture Details</h3>
+                    <p>40MM, Limited Edition of 10 pieces</p>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            
+            <div class="brand-section" id="geneva-section">
+              <h2>Geneva</h2>
+              <div class="product-container">
+                <div class="product-box" onclick="toggleDetails('product41-details')">
+                  <img class="product-image" src="Pictures/geneva/g1.PNG" alt="Product Image 41">
+                  <div class="product-title">Chrono Classic</div>
+                  <div class="product-price">$250</div>
+                   <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                  <div class="product-details" id="product41-details">
+                    <h3>Chrono Classic Details</h3>
+                    <p>40mm / 1.57"</p>
+                  </div>
+                </div>
+            
+                <div class="product-box" onclick="toggleDetails('product42-details')">
+                  <img class="product-image" src="Pictures/geneva/g2.PNG" alt="Product Image 42">
+                  <div class="product-title">Chrono Silver</div>
+                  <div class="product-price">$300</div>
+                   <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                  <div class="product-details" id="product42-details">
+                    <h3>Chrono Silver Details</h3>
+                    <p>	35.5mm / 1.4"</p>
+                  </div>
+                </div>
+        
+                <div class="product-box" onclick="toggleDetails('product43-details')">
+                    <img class="product-image" src="Pictures/geneva/g3.PNG" alt="Product Image 43">
+                    <div class="product-title">Quartz Gold</div>
+                    <div class="product-price">$400</div>
+                     <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                    <div class="product-details" id="product43-details">
+                      <h3>Quartz Gold Details</h3>
+                      <p>	40mm / 1.57"</p>
+                    </div>
+                  </div>
+        
+                  <div class="product-box" onclick="toggleDetails('product44-details')">
+                    <img class="product-image" src="Pictures/geneva/g4.PNG" alt="Product Image 44">
+                    <div class="product-title">Platinum Exclusive</div>
+                    <div class="product-price">$500</div>
+                     <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                    <div class="product-details" id="product44-details">
+                      <h3>Platinum Exclusive Details</h3>
+                      <p>	35.5mm / 1.4"</p>
+                    </div>
+                  </div>
+  
+                  <div class="product-box" onclick="toggleDetails('product45-details')">
+                    <img class="product-image" src="Pictures/geneva/g5.PNG" alt="Product Image 45">
+                    <div class="product-title">Quartz Swiss</div>
+                    <div class="product-price">$400</div>
+                     <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                    <div class="product-details" id="product45-details">
+                      <h3>Quartz Swiss Details</h3>
+                      <p>35.5mm / 1.4"</p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="brand-section" id="goldlis-section">
+                <h2>Geneva</h2>
+                <div class="product-container">
+                  <div class="product-box" onclick="toggleDetails('product01-details')">
+                    <img class="product-image" src="Pictures/goldlis/g1.jpg" alt="Product Image 01">
+                    <div class="product-title">Catawiki</div>
+                    <div class="product-price">$500</div>
+                     <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                    <div class="product-details" id="product01-details">
+                      <h3>Catawiki Details</h3>
+                      <p>Feel antique with us!</p>
+                    </div>
+                  </div>
+              
+                  <div class="product-box" onclick="toggleDetails('product02-details')">
+                    <img class="product-image" src="Pictures/geneva/g2.PNG" alt="Product Image 02">
+                    <div class="product-title">La4196bb</div>
+                    <div class="product-price">$100</div>
+                     <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                    <div class="product-details" id="product02-details">
+                      <h3>La4196bb Details</h3>
+                      <p>Las one in the stock!</p>
+                    </div>
+                  </div>
+          
+                  <div class="product-box" onclick="toggleDetails('product03-details')">
+                      <img class="product-image" src="Pictures/goldlis/g3.jpeg" alt="Product Image 03">
+                      <div class="product-title">Montre homme</div>
+                      <div class="product-price">$350</div>
+                       <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                      <div class="product-details" id="product03-details">
+                        <h3>Montre Homee Details</h3>
+                        <p>Last one produced from the brand</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+            <div class="brand-section" id="montblanc-section">
+              <h2>Montblanc</h2>
+              <div class="product-container">
+                <div class="product-box" onclick="toggleDetails('product50-details')">
+                  <img class="product-image" src="Pictures/MontBlanc/m1.jpeg" alt="Product Image 50">
+                  <div class="product-title">Geosphere Messner</div>
+                  <div class="product-price">$6.500,00</div>
+                   <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                  <div class="product-details" id="product50-details">
+                    <h3>Geosphere Messner Details</h3>
+                    <p>LIMITED EDITION - 262 PIECES</p>
+                  </div>
+                </div>
+            
+                <div class="product-box" onclick="toggleDetails('product51-details')">
+                  <img class="product-image" src="Pictures/MontBlanc/m2.jpg" alt="Product Image 51">
+                  <div class="product-title">Boheme day&night</div>
+                  <div class="product-price">$3.990,00</div>
+                   <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                  <div class="product-details" id="product51-details">
+                    <h3>Boheme day&night Details</h3>
+                    <p>30 MM</p>
+                  </div>
+                </div>
+        
+                <div class="product-box" onclick="toggleDetails('product52-details')">
+                    <img class="product-image" src="Pictures/MontBlanc/m3.jpg" alt="Product Image 52">
+                    <div class="product-title">Star Legacy Chronograph</div>
+                    <div class="product-price">$5.000,00</div>
+                     <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                    <div class="product-details" id="product52-details">
+                      <h3>Star Legacy Chronograph</h3>
+                      <p>LIMITED EDITION - 800 PIECES</p>
+                    </div>
+                  </div>
+        
+                  <div class="product-box" onclick="toggleDetails('product53-details')">
+                    <img class="product-image" src="Pictures/MontBlanc/m4.PNG" alt="Product Image 53">
+                    <div class="product-title">Tradition Automatic Date</div>
+                    <div class="product-price">$2.050,00</div>
+                     <button class="buy-button" onclick="showPaymentModal()">Buy Now</button>
+                    <div class="product-details" id="product53-details">
+                      <h3>Tradition Automatic Date Details</h3>
+                      <p> 32 MM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+
+
+              <div class="payment-modal" id="payment-modal">
+                <div class="payment-modal-content">
+                    <h2>Payment Methods</h2>
+                    <div class="payment-method-radio">
+                        <input type="radio" id="cashRadio" name="paymentMethod" class="payment-method-radio">
+                        <label for="cashRadio" class="payment-method-label"><i class="fas fa-money-bill"></i> Cash</label>
+                    </div>
+                    <div class="payment-method-radio">
+                        <input type="radio" id="paypalRadio" name="paymentMethod" class="payment-method-radio">
+                        <label for="paypalRadio" class="payment-method-label"><i class="fab fa-paypal"></i> PayPal</label>
+                    </div>
+                    <div class="payment-method-radio">
+                        <input type="radio" id="creditCardRadio" name="paymentMethod" class="payment-method-radio">
+                        <label for="creditCardRadio" class="payment-method-label"><i class="far fa-credit-card"></i> Credit Card</label>
+                    </div>
+                    <button class="payment-method-button" onclick="proceedToPayment()">Proceed to Payment</button>
+                    <button class="payment-method-button" onclick="closePaymentModal()">Close</button>
+                </div>
+            </div>
+      <script>
+        function toggleDetails(detailsId) {
+          var details = document.getElementById(detailsId);
+          details.classList.toggle('show-details');
+        }
+      </script>
+
+
+       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="swiper/script.js"></script>
+  <script>
+   function toggleDetails(detailsId) {
+    var details = document.getElementById(detailsId);
+    details.classList.toggle('show-details');
+}
+
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
+// Add event listeners to scroll to the corresponding brand section
+document.querySelectorAll('.swiper-slide a').forEach(function (link) {
+    link.addEventListener('click', function (event) {
+        event.preventDefault();
+        var brandId = link.getAttribute('href').substring(1) + '-section'; // Remove the '#' symbol
+        var brandSection = document.getElementById(brandId);
+        if (brandSection) {
+            brandSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+</script>
+<script>
+  function showPaymentModal() {
+      var paymentModal = document.getElementById('payment-modal');
+      paymentModal.style.display = 'flex';
+  }
+
+  function closePaymentModal() {
+      var paymentModal = document.getElementById('payment-modal');
+      paymentModal.style.display = 'none';
+  }
+
+  function proceedToPayment() {
+      var selectedRadio = document.querySelector('input[name="paymentMethod"]:checked');
+
+      if (selectedRadio) {
+          alert('Selected payment method: ' + selectedRadio.value);
+          closePaymentModal();
+      } else {
+          alert('Please select a payment method.');
+      }
+  }
+</script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="swiper/script.js"></script>
+</body>
+</html>
