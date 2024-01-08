@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="NewArrivals.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="banner">
+        <h2><strong>Just a click away!</strong></h2>
+        <p><strong>A world of new arrivals and endless possibilities!</strong></p>
+      </div>
+
+        <div class="product-container">
+          <div class="product-box" onclick="toggleDetails('product101-details')">
+            <img class="product-image" src="Pictures/NewArrivals/1.jpg" alt="">
+            <div class="product-title">Day-Date 36</div>
+            <div class="product-price">$107.000</div>
+            <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+            <div class="product-details" id="product101-details">
+              <h3>Day-Date 36 Details</h3>
+              <p>White mother-of-pearl set with diamonds
+                Oyster, 36mm, yellow gold and diamonds </p>
+            </div>
+          </div>
+      
+          <div class="product-box" onclick="toggleDetails('product102-details')">
+            <img class="product-image" src="Pictures/NewArrivals/2.jpg" alt="">
+            <div class="product-title">Oyster Perpetual</div>
+            <div class="product-price">$6.250</div>
+            <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+            <div class="product-details" id="product102-details">
+              <h3>Oyster Perpetual Details</h3>
+              <p>Oyster, 36mm,
+                  Oystersteel</p>
+            </div>
+          </div>
+  
+          <div class="product-box" onclick="toggleDetails('product103-details')">
+              <img class="product-image" src="Pictures/NewArrivals/3.jpg" alt="">
+              <div class="product-title">Cosmograph Daytona</div>
+              <div class="product-price">$40.800</div>
+              <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+              <div class="product-details" id="product103-details">
+                <h3>Cosmograph Daytona Details</h3>
+                <p>Black,
+                   Oyster, 40mm,
+                   Yellow Gold</p>
+              </div>
+            </div>
+  
+            <div class="product-box" onclick="toggleDetails('product104-details')">
+              <img class="product-image" src="Pictures/NewArrivals/4.jpg" alt="">
+              <div class="product-title">Royal Oak Offshore Chronograph</div>
+              <div class="product-price">$188,619</div>
+               <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+              <div class="product-details" id="product104-details">
+                <h3>Royal Oak Offshore Chronograph Details</h3>
+                <p>Frosted Gold Double Balance Wheel Openworked,
+                    37mm, 18-carat pink gold</p>
+              </div>
+            </div>
+  
+            <div class="product-box" onclick="toggleDetails('product105-details')">
+              <img class="product-image" src="Pictures/NewArrivals/5.jpg" alt="">
+              <div class="product-title">Cosmograph Daytona</div>
+              <div class="product-price">$78.600</div>
+               <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+              <div class="product-details" id="product105-details">
+                <h3>Cosmograph Daytona Details</h3>
+                <p>Oyster, 40mm, platinum</p>
+              </div>
+            </div>
+  
+            <div class="product-box" onclick="toggleDetails('product106-details')">
+                <img class="product-image" src="Pictures/NewArrivals/6.jpg" alt="">
+                <div class="product-title">MontBlanc 1858</div>
+                <div class="product-price">$4.900,00</div>
+                 <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+                <div class="product-details" id="product106-details">
+                  <h3>MontBlanc 1858 Details</h3>
+                  <p>Automatic chronograph Watch</p>
+                </div>
+              </div>
+        </div>
+
+        <!-- Payment Modal -->
+    <div class="payment-modal" id="payment-modal">
+      <div class="payment-modal-content">
+          <h2>Payment Methods</h2>
+          <div class="payment-method-radio">
+              <input type="radio" id="cashRadio" name="paymentMethod" class="payment-method-radio">
+              <label for="cashRadio" class="payment-method-label">Cash</label>
+          </div>
+          <div class="payment-method-radio">
+              <input type="radio" id="paypalRadio" name="paymentMethod" class="payment-method-radio">
+              <label for="paypalRadio" class="payment-method-label">PayPal</label>
+          </div>
+          <div class="payment-method-radio">
+              <input type="radio" id="creditCardRadio" name="paymentMethod" class="payment-method-radio">
+              <label for="creditCardRadio" class="payment-method-label">Credit Card</label>
+          </div>
+          <button class="payment-method-button" onclick="proceedToPayment()">Proceed to Payment</button>
+          <button class="payment-method-button" onclick="closePaymentModal()">Close</button>
+      </div>
+  </div>
+
+  <!-- Shipping and Billing Form -->
+<div id="shippingBillingForm" class="payment-modal" style="display: none;">
+  <div class="payment-modal-content">
+      <h2>Shipping and Billing</h2>
+
+      <!-- Shipping Section -->
+      <div class="form-section">
+          <label for="shippingMethod">Shipping Method:</label>
+          <select id="shippingMethod">
+              <option value="standard">Standard Shipping</option>
+              <option value="express">Express Shipping</option>
+          </select>
+          <!-- Truck icon -->
+          <i class="fas fa-truck"></i>
+      </div>
+
+      <!-- Billing Section -->
+      <div class="form-section">
+          <label for="billingMethod">Billing Method:</label>
+          <select id="billingMethod">
+              <option value="creditCard">Credit Card</option>
+              <option value="paypal">PayPal</option>
+          </select>
+
+          <!-- Additional Billing Information (e.g., credit card details) -->
+          <!-- Add more fields as needed -->
+
+          <!-- Credit Card/Money icon -->
+          <i class="far fa-credit-card"></i>
+
+          <!-- Submit Button -->
+          <div class="form-buttons">
+              <button onclick="submitPayment()">Submit Payment</button>
+              <button onclick="closeShippingBillingForm()">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+        <script>
+            function toggleDetails(detailsId) {
+              var details = document.getElementById(detailsId);
+              details.classList.toggle('show-details');
+            }
+          </script>
+
+<script>
+  function showPaymentModal() {
+      var paymentModal = document.getElementById('payment-modal');
+      paymentModal.style.display = 'flex';
+  }
+
+  function closePaymentModal() {
+      var paymentModal = document.getElementById('payment-modal');
+      paymentModal.style.display = 'none';
+  }
+
+  function proceedToPayment() {
+      // You may perform any necessary checks before showing the form
+      showShippingBillingForm();
+  }
+
+  function showShippingBillingForm() {
+      var form = document.getElementById('shippingBillingForm');
+      form.style.display = 'flex';
+  }
+
+  function closeShippingBillingForm() {
+      var form = document.getElementById('shippingBillingForm');
+      form.style.display = 'none';
+  }
+
+  function submitPayment() {
+      // In a real implementation, this is where you would send the payment details to a server
+      // for processing using a secure connection (HTTPS) and a server-side payment processing library.
+
+      alert('Payment processed successfully!');
+      // You would typically redirect the user to a thank-you page or perform other post-payment actions.
+  }
+</script>
+
+
+</body>
+</html>
