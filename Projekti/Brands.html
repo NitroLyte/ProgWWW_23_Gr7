@@ -233,9 +233,10 @@
             </div>
           </div>
         </div>
+       
+
+
         <div class="brand-section" id="omega-section">
-
-
           <h2>Omega</h2>
           <div class="product-container">
           <div class="product-box" onclick="toggleDetails('product15-details')">
@@ -653,7 +654,7 @@
               </div> 
 
               <div class="brand-section" id="goldlis-section">
-                <h2>Geneva</h2>
+                <h2>Goldlis</h2>
                 <div class="product-container">
                   <div class="product-box" onclick="toggleDetails('product01-details')">
                     <img class="product-image" src="Pictures/goldlis/g1.jpg" alt="Product Image 01">
@@ -782,6 +783,25 @@
           var details = document.getElementById(detailsId);
           details.classList.toggle('show-details');
         }
+       //qeto e kom bo une haha
+        function toggleDetails(detailsId) {
+    // Hide all product details initially
+    var allDetails = document.querySelectorAll('.product-details');
+    allDetails.forEach(function (details) {
+      details.style.display = 'none';
+    });
+
+    // Show the details for the clicked product
+    var clickedDetails = document.getElementById(detailsId);
+    if (clickedDetails) {
+      clickedDetails.style.display = 'block';
+    }
+  }
+
+  function proceedToPayment() {
+    // Your logic for proceeding to payment
+    console.log('Proceeding to payment...');
+  }
       </script>
 
 
@@ -859,6 +879,12 @@ document.querySelectorAll('.swiper-slide a').forEach(function (link) {
 </script>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="swiper/script.js"></script>
+    
+    <div class="black-space">
+      <br/>
+      <br/>
+      <h1>CHOOSE US</h1><br/>
+      <p>Call or Text us to get your 'dream watch' at 917-439-9610</p>
+  </div>
 </body>
 </html>

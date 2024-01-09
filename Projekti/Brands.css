@@ -1,4 +1,5 @@
 body {
+  background-color: rgb(49, 44, 44);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body {
   color: #fff;
   padding: 30px;
   text-align: right;
+  margin-right: 50px;
   width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -18,10 +20,12 @@ body {
 .swiper-container {
   width: 50%;
   height: 300px; 
+  color: #fff;
 }
 
 .swiper-slide {
   text-align: center;
+  color: #fff;
   font-size: 18px;
   display: flex;
   flex-direction: column;
@@ -37,8 +41,20 @@ body {
 
 .swiper-slide a {
   text-decoration: none;
-  color: #007bff;
+  color: white;
   font-weight: bold;
+}
+
+.swiper-pagination, .swiper-button-next, .swiper-button-prev {
+  margin-top: 10px;
+  color: transparent;
+}
+
+/* Adjust the size and color of the pagination bullets */
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
 }
 
 .brand-section {
@@ -46,9 +62,8 @@ body {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) inset;
 }
-
 .payment-modal {
   display: none;
   position: fixed;
@@ -157,19 +172,20 @@ select, input {
 }
 
 .product-title {
+  color: black;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .product-price {
-  color: #007bff;
+  color: black;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
 .buy-button {
-  background-color: #007bff;
+  background-color: rgb(31, 80, 31);
   color: #fff;
   padding: 10px;
   border: none;
@@ -180,20 +196,48 @@ select, input {
 }
 
 .product-details {
+  color: black;
   display: none;
   margin-top: 20px;
 }
 
 .show-details {
+  color: black;
   display: block;
 }
+.brand-section {
+  border: transparent;
+  color: white;
+ 
+ }
+ .product-container{
+  margin-left: 80px;
+  border: transparent;
+
+
+ }
+
 
 .brand-section h2 {
-  margin-bottom: 10px;
+  margin-left: 120px;
 }
 
 .product-box {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.black-space{
+  height: 150px; 
+  background-color: rgb(49, 44, 44);
+}
+.black-space h1{
+  color: gray;
+  text-align: center;
+
+}
+.black-space p{
+  color: gray;
+  text-align: center;
+
 }

@@ -4,89 +4,301 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="NewArrivals.css">
     <title>Document</title>
 </head>
 <body>
 
-    <div class="banner">
-        <h2><strong>Just a click away!</strong></h2>
-        <p><strong>A world of new arrivals and endless possibilities!</strong></p>
+  
+  <div class="banner">
+    <h2><strong>Just a click away!</strong></h2>
+    <p><strong>A world of new arrivals and endless possibilities!</strong></p>
+  </div>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" onclick="toggleDetails('product101-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/NewArrivals/1.jpg" alt="">
+          <div class="product-title">Oyster perpetual day-date</div>
+          <div class="product-price">$107.000</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product101-details">
+            <h3> Details</h3>
+            <p>White mother-of-pearl set with diamonds Oyster, 36mm, yellow gold and diamonds</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide" onclick="toggleDetails('product102-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/NewArrivals/2.jpg" alt="">
+          <div class="product-title">Oyster Perpetual</div>
+          <div class="product-price">$6.250</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product102-details">
+            <h3>Details</h3>
+            <p>Oyster, 36mm, Oystersteel</p>
+          </div>
+        </div>
       </div>
 
-        <div class="product-container">
-          <div class="product-box" onclick="toggleDetails('product101-details')">
-            <img class="product-image" src="Pictures/NewArrivals/1.jpg" alt="">
-            <div class="product-title">Day-Date 36</div>
-            <div class="product-price">$107.000</div>
-            <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
-            <div class="product-details" id="product101-details">
-              <h3>Day-Date 36 Details</h3>
-              <p>White mother-of-pearl set with diamonds
-                Oyster, 36mm, yellow gold and diamonds </p>
-            </div>
+      <div class="swiper-slide" onclick="toggleDetails('product103-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/NewArrivals/3.jpg" alt="">
+          <div class="product-title">Cosmograph Daytona</div>
+          <div class="product-price">$107.000</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product103-details">
+            <h3> Details</h3>
+            <p>White mother-of-pearl set with diamonds Oyster, 36mm, yellow gold and diamonds</p>
           </div>
-      
-          <div class="product-box" onclick="toggleDetails('product102-details')">
-            <img class="product-image" src="Pictures/NewArrivals/2.jpg" alt="">
-            <div class="product-title">Oyster Perpetual</div>
-            <div class="product-price">$6.250</div>
-            <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
-            <div class="product-details" id="product102-details">
-              <h3>Oyster Perpetual Details</h3>
-              <p>Oyster, 36mm,
-                  Oystersteel</p>
-            </div>
-          </div>
-  
-          <div class="product-box" onclick="toggleDetails('product103-details')">
-              <img class="product-image" src="Pictures/NewArrivals/3.jpg" alt="">
-              <div class="product-title">Cosmograph Daytona</div>
-              <div class="product-price">$40.800</div>
-              <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
-              <div class="product-details" id="product103-details">
-                <h3>Cosmograph Daytona Details</h3>
-                <p>Black,
-                   Oyster, 40mm,
-                   Yellow Gold</p>
-              </div>
-            </div>
-  
-            <div class="product-box" onclick="toggleDetails('product104-details')">
-              <img class="product-image" src="Pictures/NewArrivals/4.jpg" alt="">
-              <div class="product-title">Royal Oak Offshore Chronograph</div>
-              <div class="product-price">$188,619</div>
-               <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
-              <div class="product-details" id="product104-details">
-                <h3>Royal Oak Offshore Chronograph Details</h3>
-                <p>Frosted Gold Double Balance Wheel Openworked,
-                    37mm, 18-carat pink gold</p>
-              </div>
-            </div>
-  
-            <div class="product-box" onclick="toggleDetails('product105-details')">
-              <img class="product-image" src="Pictures/NewArrivals/5.jpg" alt="">
-              <div class="product-title">Cosmograph Daytona</div>
-              <div class="product-price">$78.600</div>
-               <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
-              <div class="product-details" id="product105-details">
-                <h3>Cosmograph Daytona Details</h3>
-                <p>Oyster, 40mm, platinum</p>
-              </div>
-            </div>
-  
-            <div class="product-box" onclick="toggleDetails('product106-details')">
-                <img class="product-image" src="Pictures/NewArrivals/6.jpg" alt="">
-                <div class="product-title">MontBlanc 1858</div>
-                <div class="product-price">$4.900,00</div>
-                 <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
-                <div class="product-details" id="product106-details">
-                  <h3>MontBlanc 1858 Details</h3>
-                  <p>Automatic chronograph Watch</p>
-                </div>
-              </div>
         </div>
+      </div>
+      
+      <div class="swiper-slide" onclick="toggleDetails('product104-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/NewArrivals/4.jpg" alt="">
+          <div class="product-title">Constellation</div>
+          <div class="product-price">$6.250</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product104-details">
+            <h3>Details</h3>
+            <p>Oyster, 36mm, Oystersteel</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide" onclick="toggleDetails('product105-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/NewArrivals/5.jpg" alt="">
+          <div class="product-title">Audemars Piguet</div>
+          <div class="product-price">$107.000</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product105-details">
+            <h3> Details</h3>
+            <p>36mm, rose gold and diamonds</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide" onclick="toggleDetails('product106-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/NewArrivals/6.jpg" alt="">
+          <div class="product-title">Montblanc</div>
+          <div class="product-price">$6.250</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product106-details">
+            <h3>Details</h3>
+            <p>36mm, white gold, blue strap</p>
+          </div>
+        </div>
+      </div>
 
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  </div>
+
+  <div class="banner1">
+    <h2><strong>Timeless Elegance, Limited Edition Excellence!</strong></h2>
+    <p><strong>Where Every Second Counts in Exclusivity.</strong></p>
+  </div>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" onclick="toggleDetails('product002-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/Limited/l1.jpg" alt="">
+          <div class="product-title">Cosmograph Daytona</div>
+          <div class="product-price">$107.000</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product002-details">
+            <h3>Details</h3>
+            <p>18ct white gold with a black monobloc Cerachrom bazel in ceramic</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide" onclick="toggleDetails('product102-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/Limited/l2.jpg" alt="">
+          <div class="product-title">Day-Date 40</div>
+          <div class="product-price">$6.250</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product102-details">
+            <h3>Details</h3>
+            <p>18 ct gold w/black dial</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" onclick="toggleDetails('product103-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/Limited/l3.jpg" alt="">
+          <div class="product-title">Datejust 36</div>
+          <div class="product-price">$107.000</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product103-details">
+            <h3>Details</h3>
+            <p>Oystersteel and white gold</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide" onclick="toggleDetails('product104-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/Limited/l4.jpg" alt="">
+          <div class="product-title"></div>
+          <div class="product-price">$6.250</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product104-details">
+            <h3>Details</h3>
+            <p>18ct yellow gold and yellow Rolesor</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide" onclick="toggleDetails('product105-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/Limited/l5.jpg" alt="">
+          <div class="product-title">Oyster Perpetual</div>
+          <div class="product-price">$107.000</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product105-details">
+            <h3>Details</h3>
+            <p>Oystersteel, bright blue sunray-finish dial, domed bezel and Oyster Bracelet.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide" onclick="toggleDetails('product106-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/Limited/l6.jpg" alt="">
+          <div class="product-title">Royal Oak Chronograph</div>
+          <div class="product-price">$6.250</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product106-details">
+            <h3>Details</h3>
+            <p>Purple White gold 41mm</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" onclick="toggleDetails('product104-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/Limited/l7.jpg" alt="">
+          <div class="product-title">Replica Relojes 3352</div>
+          <div class="product-price">$6.250</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product104-details">
+            <h3>Details</h3>
+            <p>Ion-plated stainless steel</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide" onclick="toggleDetails('product105-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/Limited/l8.jpg" alt="">
+          <div class="product-title">Monaco Legend Auctions</div>
+          <div class="product-price">$107.000</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product105-details">
+            <h3>Details</h3>
+            <p>Yellow gold, black crocodile leather strips</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" onclick="toggleDetails('product104-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/Limited/l9.jpg" alt="">
+          <div class="product-title">Thin Tourbillon</div>
+          <div class="product-price">$6.250</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product104-details">
+            <h3>Details</h3>
+            <p>Extra-thin Royal Oak edition</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide" onclick="toggleDetails('product105-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/Limited/l10.jpg" alt="">
+          <div class="product-title">DeVille Tourbillon</div>
+          <div class="product-price">$107.000</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product105-details">
+            <h3>Details</h3>
+            <p>38.7mm, platinum on leather strap</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" onclick="toggleDetails('product104-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/Limited/l12.jpg" alt="">
+          <div class="product-title">Hourstriker Phantom</div>
+          <div class="product-price">$6.250</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product104-details">
+            <h3>Details</h3>
+            <p>43mm titanium-case Phantom</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide" onclick="toggleDetails('product105-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/Limited/l13.jpg" alt="">
+          <div class="product-title">Planet ocean 2500</div>
+          <div class="product-price">$107.000</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product105-details">
+            <h3> Details</h3>
+            <p>White gold, black dial</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" onclick="toggleDetails('product104-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/Limited/l14.jpg" alt="">
+          <div class="product-title">Free Wheel</div>
+          <div class="product-price">$6.250</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product104-details">
+            <h3>Details</h3>
+            <p>Gold cover, black strap</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide" onclick="toggleDetails('product105-details')">
+        <div class="product-box">
+          <img class="product-image" src="Pictures/Limited/l15.jpg" alt="">
+          <div class="product-title">Moonphase 42mm</div>
+          <div class="product-price">$4.000,00</div>
+          <button class="buy-button" onclick="proceedToPayment()">Buy Now</button>
+          <div class="product-details" id="product105-details">
+            <h3> Details</h3>
+            <p>White gold, black strap</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  </div>
+    
         <!-- Payment Modal -->
     <div class="payment-modal" id="payment-modal">
       <div class="payment-modal-content">
@@ -147,12 +359,17 @@
   </div>
 </div>
 
-        <script>
-            function toggleDetails(detailsId) {
-              var details = document.getElementById(detailsId);
-              details.classList.toggle('show-details');
-            }
-          </script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 4, // Set to 'auto' to fit as many slides as possible in the container
+    spaceBetween: 5, // Adjust the space between slides as needed
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+</script>
 
 <script>
   function showPaymentModal() {
@@ -189,6 +406,12 @@
   }
 </script>
 
+<div class="black-space">
+  <br/>
+  <br/>
+  <h1>CHOOSE US</h1><br/>
+  <p>Call or Text us to get your 'dream watch' at 917-439-9610</p>
+</div>
 
 </body>
 </html>
