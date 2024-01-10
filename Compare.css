@@ -4,9 +4,10 @@ body {
   height: 100vh; 
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(#000000, #444444);
-  background-size: 600% 600%;
-  animation: bg 12s ease infinite;
-  
+  background-size: 400% 400%; 
+  background-clip: content-box;
+  animation: bg 12s ease-out infinite;
+  overflow-x: hidden;
 }
 
 @keyframes bg {
@@ -63,7 +64,7 @@ nav ul li a {
 }
 
 nav a:hover {
-  border-bottom: 2px solid #083308; 
+  border-bottom: 2px solid white; 
   padding-bottom: 3px;
 }
 
@@ -84,7 +85,6 @@ nav a:hover {
   outline: none;
   width: 200px;
   transition: border-color 0.3s ease;
-  
 }
 
 #searchInput:focus {
@@ -118,7 +118,6 @@ nav a:hover {
 --clr-5:#637c54;
 }
 
-
 h1 {
   text-align: center;
   color: white;
@@ -143,12 +142,38 @@ justify-content: center;
  z-index: 1;
  border-radius: 100px 100px 0px 0px;
  left: 100px;
- border:1px solid white;
- box-shadow: 10px  white
 }
-
-.box::after {
-  filter: blur(3.5rem);
+.glow::before, .glow::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    -45deg,
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5)
+  );
+  background-size: 400%;
+  height: calc(100% + 5px);
+  width: calc(100% + 5px);
+  z-index: 2;
+  animation: change 40s linear infinite;
+}
+@keyframes change {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+  
+}
+.glow::after {
+  filter: blur(40px);
 }
 
 select {
@@ -277,6 +302,7 @@ table {
   backdrop-filter: blur(7px);
   border-radius: 0.8rem;
   z-index: 2;
+  height: 42%;
   width: 60%;
   border-collapse: collapse;
   border-spacing: 0;
@@ -294,6 +320,7 @@ tr {
  
 }
 th, td {
+  color: white;
   padding: 12px;
   text-align: left;
   border-bottom: 1px solid #ddd;
