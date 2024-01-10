@@ -116,8 +116,10 @@
           </article>                       
           </div>
       </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
   </div>
-
 </section>
 <div class="banner1">
   <h3><strong>Timeless Elegance, Limited Edition Excellence!</strong></h3>
@@ -287,6 +289,9 @@
 </article>
           </div>
       </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
   </div>
 </section>
 
@@ -338,13 +343,20 @@
 <script src="assets/js/swiper-bundle.min.js"></script>
 
 <script>
-  let newSwiper = new Swiper(".new-swiper", {
-    spaceBetween: 24,
-    loop: 'true',
-          slidesPerView: 3,
-        
-});
-</script>
+    let newSwiper = new Swiper(".new-swiper", {
+      spaceBetween: 24,
+      loop: true,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 
 <script>
   function showPaymentModal() {
