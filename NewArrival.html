@@ -10,7 +10,6 @@
 </head>
 <body>
 
-  
   <div class="banner">
     <h3><strong>Just a click away!</strong></h3>
     <p><strong>A world of new arrivals and endless possibilities!</strong></p>
@@ -289,19 +288,27 @@
   let newSwiper = new Swiper(".new-swiper", {
     spaceBetween: 24,
     loop: 'true',
-
-    breakpoints: {
-        576: {
-          slidesPerView: 2,
-        },
-        768: {
           slidesPerView: 3,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
-    },
+        
 });
+</script>
+<script>
+    const cart = document.getElementById('cart'),
+      cartShop = document.getElementById('cart-shop'),
+      cartClose = document.getElementById('cart-close')
+
+if(cartShop){
+    cartShop.addEventListener('click', () =>{
+        cart.classList.add('show-cart')
+    })
+}
+
+if(cartClose){
+    cartClose.addEventListener('click', () =>{
+        cart.classList.remove('show-cart')
+    })
+}
+
 </script>
 
 </body>
