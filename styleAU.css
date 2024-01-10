@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+}
+
+.heading h1 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+   
+}
+
+.heading p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+}
+
+.about_video {
+    flex: 1;
+    max-width: 50%; 
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about_video video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about_video:hover video {
+    transform: scale(1.2);
+}
+
+.about-content {
+    flex: 1;
+    max-width: 50%; 
+}
+
+
+
+.about-content p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: white;
+}
+.black-space{
+    height: 150px; 
+    background-color: black;
+}
+.black-space h1{
+    color: gray;
+    text-align: center;
+
+}
+.black-space p{
+    color: gray;
+    text-align: center;
+
+}
