@@ -102,3 +102,10 @@ body {
     text-align: center;
 
 }
+.mark {
+    color: white; 
+    background-color: #333; 
+    padding: 5px; 
+    text-decoration: underline; 
+  }
+  
