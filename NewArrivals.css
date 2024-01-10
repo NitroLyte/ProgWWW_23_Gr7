@@ -1,9 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
+nav {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100; 
+}
+
+nav .logo {
+  width: 80px;
+  margin-left: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  
+}
+
+nav ul li {
+  margin-left: 40px;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #083308; 
+  padding-bottom: 3px;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  margin-left: 40%;
+  right:10%;
+}
+
+#searchInput {
+  padding: 5px;
+  background-color: white;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  width: 200px;
+  transition: border-color 0.3s ease;
+  
+}
+
+#searchInput:focus {
+  border-color: transparent;
+}
+
+#searchIcon {
+  font-size: 20px;
+  border: transparent;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: transparent;
+}
+
+#searchIcon:hover {
+  color: gray;
+}
+
+.logo {
+  width: 100px;
+  height: auto; 
+  margin-right: 10px; 
+}
+
 :root {
   background-color: rgb(49, 44, 44);
   --header-height: 3.5rem;
-  --first-color: hsl(31, 100%, 70%);
+  --first-color: #cac6c6;
   --button-color: hsl(0, 0%, 17%);
   --button-color-alt: hsl(0, 0%, 21%);
   --title-color: hsl(0, 0%, 15%);
@@ -58,6 +140,8 @@
     background-color: var(--body-color);
     color: var(--text-color);
   }
+
+  
 
   .header i{
     height: 100px;
@@ -124,6 +208,7 @@
   max-width: 1024px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
+  justify-content: center;
 }
 
 .grid {
@@ -319,116 +404,94 @@
 
 }
 
-.cart {
-  position: fixed;
-  background-color: var(--body-color);
-  z-index: var(--z-fixed);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: -100%;
-  padding: 3.5rem 2rem;
-  transition: .4s;
-}
-
-.cart__title-center {
-  font-size: var(--h2-font-size);
-  text-align: center;
-  margin-bottom: var(--mb-3);
-}
-
-.cart__close {
-  font-size: 2rem;
-  color: var(--title-color);
-  position: absolute;
-  top: 1.25rem;
-  right: .9rem;
+.buy-button {
+  background-color: rgb(31, 80, 31);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 14px;
+  width: 215px;
 }
-
-.cart__container {
-  display: grid;
-  row-gap: 1.5rem;
-}
-
-.cart__card {
-  display: flex;
-  align-items: center;
-  column-gap: 1rem;
-}
-
-.cart__box {
-  background-color: var(--container-color);
-  padding: .75rem 1.25rem;
-  border: 1px solid var(--border-color);
-}
-
-.cart__img {
-  width: 50px;
-}
-
-.cart__title {
-  font-size: var(--normal-font-size);
-  margin-bottom: .5rem;
-}
-
-.cart__price {
-  display: block;
-  font-size: var(--small-font-size);
-  color: var(--first-color);
-  margin-bottom: var(--mb-1-5);
-}
-
-.cart__amount,
-.cart__amount-content{
-  display: flex;
-  align-items: center;
-}
-
-.cart__amount{
-  column-gap: 3rem;
-}
-
-.cart__amount-content{
-  column-gap: 1rem;
-}
-
-.cart__amount-box {
-  display: inline-flex;
-  padding: .25rem;
-  background-color: var(--container-color);
-  border: 1px solid var(--border-color);
-  cursor: pointer;
-}
-
-.cart__amount-trash {
-  font-size: 1.15rem;
-  color: var(--first-color);
-  cursor: pointer;
-}
-
-.cart__prices {
-  margin-top: 6rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.cart__prices-item, 
-.cart__prices-total {
-  color: var(--title-color);
-}
-
-.cart__prices-item {
-  font-size: var(--small-font-size);
-}
-
-.cart__prices-total {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-}
-
-/* Show cart */
-.show-cart {
-  right: 0;
-}
-
+  
+  .payment-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .payment-modal-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .payment-method-radio {
+    margin: 10px;
+  }
+  
+  .payment-method-label {
+    font-size: 16px;
+  }
+  
+  .payment-method-button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+  }
+  
+  /* New styles for the shipping and billing form */
+  #shippingBillingForm {
+    display: none;
+  }
+  
+  /* Improved form styles */
+  .form-section {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  select, input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-buttons button {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
