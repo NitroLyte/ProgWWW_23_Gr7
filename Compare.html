@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch Comparison</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     <link rel="stylesheet" href="Compare.css">
     <script src="Compare.js"></script>
     <script src="dataCom.js"></script>
@@ -11,8 +12,24 @@
 </head>
     <body>
 
+        <nav>
+            <img src="images/WATCH-OBSERVER.png" class="logo">  
+            <ul>
+                <li><a href="index.html" >HOME</a></li> 
+                <li><a href="Brands.html" >BRANDS</a></li> 
+                <li><a href="NewArrival.html" >NEW ARRIVALS</a></li> 
+                <li><a href="Compare.html" >COMPARE</a></li> 
+                <li><a href="about_us.html" id="aboutLink" >ABOUT US</a></li>
+            </ul>
+            <div class="search-bar">
+                <input id="searchInput" type="text" placeholder="Search...">
+                <a href="#" id="searchIcon" class="fa fa-search"></a>
+            </div>
+            
+        </nav>
+
             <h1>Compare your favorite Watches!</h1>
-            <div class="box"></div>
+            <div class="box">
             <div class="watch1">
                       <select class="selectorForm" id="select1" onchange="item1(this.value)" ></select>
                        
@@ -64,6 +81,7 @@
                     </tr>
                 </tbody>
             </table> 
+        </div>
      
     </body>
 
