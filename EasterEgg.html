@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasterEgg</title>
+    <script src="dataCom.js"></script>
+    <link rel="stylesheet" href="EasterEgg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+   
+    <a href="index.html">
+        <img src="images/house-solid.svg" alt="" width="50" style="padding: 15px;">
+    </a>
+    <h1>Select your favorite animation and start the fun!</h1>
+
+    <div class="container">
+    <div class="watcher">
+    <img id="extendedElement" src="Pictures/geneva.png" alt="Imazhi" width="350" height="250">
+    </div>
+    <div class="box"></div>
+    <div class="box1"></div>
+        <table>
+            <tr>
+                <td><button class="table-button" onclick="extendElement()">Translate</table-button></td>
+                <td><button class="table-button" onclick="Rotate()">Rotate</table-button></td>
+                <td><button class="table-button" onclick="Scale()">Scale</table-button></td>
+            </tr>
+            <tr>
+                <td><button class="table-button" onclick="Skew()">Skew</table-button></td>
+                <td><button class="table-button" onclick="RotateX()">RotateX</table-button></td>
+                <td><button class="table-button" onclick="RotateY()">RotateY</table-button></td>
+            </tr>
+            <tr>
+                <td><button class="table-button" onclick="Rotate3D()">Rotate 3D</table-button></td>
+                <td><button class="table-button" onclick="hideElement()">Hide</table-button></td>
+                <td><button class="table-button" onclick="showElement()">Show</table-button></td>
+            </tr>
+            <tr>
+                <td><button class="table-button" onclick="fadeElement()">Fade</table-button></td>
+                <td><button class="table-button" onclick="slideElement()">Slide</table-button></td>
+                <td><button class="table-button" onclick="animateElement()">Animate</table-button></td>
+            </tr>
+                <tr><td><button class="table-button" onclick="callback()">Callback</table-button></td></tr>
+</table>
+    
+
+
+    <script>
+        function extendElement() {
+            var element = document.getElementById("extendedElement");
+            element.classList.toggle("extended");
+        }
+        function Rotate() {
+            var element = document.getElementById("extendedElement");
+            element.classList.toggle("rotated");
+        }
+        function Scale() {
+            var element = document.getElementById("extendedElement");
+            element.classList.toggle("scaled");
+        }
+        function Skew() {
+            var element = document.getElementById("extendedElement");
+            element.classList.toggle("skewed");
+        }
+        function RotateX() {
+            var element = document.getElementById("extendedElement");
+            element.classList.toggle("rotatedX");
+        }
+        function RotateY() {
+            var element = document.getElementById("extendedElement");
+            element.classList.toggle("rotatedY");
+        }
+        function Rotate3D() {
+            var element = document.getElementById("extendedElement");
+            element.classList.toggle("rotated3D");
+        }
+        function hideElement() {
+        $("#extendedElement").hide();
+    }
+    function showElement() {
+        $("#extendedElement").show();
+    }
+    function fadeElement() {
+        $("#extendedElement").fadeIn();
+    }
+    function slideElement() {
+        $("#extendedElement").slideUp();
+    }
+    function animateElement() {
+        $("#extendedElement").animate({width: "200px",
+            height: "200px", 
+            opacity: 0.5, 
+            marginLeft: "50px", 
+            marginTop: "50px", 
+            rotate: '+=45', 
+        }, 1000, "linear", function() {
+            alert("Animation complete!");
+        });
+    }
+    </script>
+</body>
+</html>

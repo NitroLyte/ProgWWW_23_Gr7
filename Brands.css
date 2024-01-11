@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(49, 44, 44);
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -20,10 +20,7 @@ nav {
   z-index: 100; 
 }
 
-nav .logo {
-  width: 80px;
-  margin-left: 50px;
-}
+
 
 nav ul {
   list-style: none;
@@ -33,14 +30,16 @@ nav ul {
 
 nav ul li {
   margin-left: 40px;
+  margin-top:-5%;
+  
   
 }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 15px;
-  transition: ease-in-out 0.3s;
+  font-size: 18px;
+  
 }
 
 nav a:hover {
@@ -53,18 +52,19 @@ nav a:hover {
   display: flex;
   align-items: center;
   margin: 20px;
-  margin-left: 20px;
-  right:10%;
+  margin-left: 50px;
+  
 }
 
 #searchInput {
-  padding: 5px;
-  background-color: white;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  outline: none;
-  width: 200px;
-  transition: border-color 0.3s ease;
+  margin-top:-15%;
+        padding: 5px;
+        background-color: white;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        outline: none;
+        width: 200px;
+        transition: transparent 0.3s ease;
   
 }
 
@@ -73,6 +73,7 @@ nav a:hover {
 }
 
 #searchIcon {
+  margin-top:-20%;
   font-size: 20px;
   border: transparent;
   color: white;
@@ -86,15 +87,17 @@ nav a:hover {
 }
 
 .logo {
-  width: 100px;
-  height: auto; 
+  width: 180px;
+  height: 180px; 
   margin-right: 10px; 
+  margin-top:-3%; 
 }
 
 .banner {
   background: url('Pictures/banner.jpg') center/cover no-repeat;
   color: #fff;
-  padding: 30px;
+  margin-top:-4%;
+  padding: 50px;
   text-align: right;
   margin-right: 50px;
   width: 100%;
@@ -312,8 +315,8 @@ select, input {
   align-items: center;
 }
 .black-space{
-  height: 150px; 
-  background-color: rgb(49, 44, 44);
+  height: 200px; 
+  background-color:  black;
 }
 .black-space h1{
   color: gray;

@@ -13,7 +13,7 @@
     <body>
 
         <nav>
-            <img src="images/WATCH-OBSERVER.png" class="logo">  
+            <img src="images/firsttlogo.png" class="logo">  
             <ul>
                 <li><a href="index.html" >HOME</a></li> 
                 <li><a href="Brands.html" >BRANDS</a></li> 
@@ -33,14 +33,14 @@
             <div class="watch1">
                       <select class="selectorForm" id="select1" onchange="item1(this.value)" ></select>
                        
-                <img src="Pictures/123.jpg" id="img1" alt="Foto e Ore's" >
+                <img src="Pictures/OIP.jpg" id="img1" alt="Foto e Ore's" >
                       
             </div>
             
             <div class="watch2">
                 <select id="select2" onchange="item2(this.value)" ></select>
                     
-                <img src="Pictures/123.jpg" id="img2" alt="Foto e Ore's">
+                <img src="Pictures/OIP.jpg" id="img2" alt="Foto e Ore's">
                     
             </div>
             
@@ -81,8 +81,16 @@
                     </tr>
                 </tbody>
             </table> 
+            
         </div>
-     
+        <br>
+        <div class="black-space">
+            <br/>
+            <br/>
+            <h1>CHOOSE US</h1><br/>
+            <p>Call or Text us to get your 'dream watch' at 917-439-9610</p>
+            
+        </div>
     </body>
 
 </html>
@@ -101,7 +109,7 @@
         document.getElementById("glass1").innerHTML = watches[a].feature2
         document.getElementById("warranty1").innerHTML = watches[a].feature3
         document.getElementById("limited_edition1").innerHTML = watches[a].feature4
-        document.getElementById("wtch1").innerHTML = watches[a].id;
+        document.getElementById("wtch1").innerHTML = watches[a].name;
         
 
 
@@ -114,7 +122,7 @@
         document.getElementById("glass2").innerHTML = watches[a].feature2
         document.getElementById("warranty2").innerHTML = watches[a].feature3
         document.getElementById("limited_edition2").innerHTML = watches[a].feature4
-        document.getElementById("wtch2").innerHTML = watches[a].id;
+        document.getElementById("wtch2").innerHTML = watches[a].name;
     }
 
 </script>
